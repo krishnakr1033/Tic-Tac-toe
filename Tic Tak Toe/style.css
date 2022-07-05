@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(9, 211, 211);
+    color: rgb(12, 11, 11);
+    height: 75px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+nav ul{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.gameContainer{
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,16vw);
+    grid-template-rows: repeat(3,16vw);
+    font-family: 'Rubik Moonrocks', cursive;
+    position: relative;
+}
+.box{
+    border: 2px solid black;
+    font-size: 5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(34, 187, 60);
+}
+.gameInfo{
+    padding: 0px 35px;
+    font-family: 'Lobster', cursive;
+}
+.gameInfo h1{
+    font-size: 2.2rem;
+}
+.info{
+    font-size: 20px;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br{ 
+    border-right: 0;
+}
+.bl{
+    border-left: 0;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+#reset{
+    margin: 0 23px;
+    padding: 5px 15px;
+    background-color: darksalmon;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bolder;
+}
+@media screen and (max-width: 900px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 40px;
+    }
+}
